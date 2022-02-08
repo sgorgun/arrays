@@ -22,7 +22,7 @@ If a compiler error or warning message is not clear, [review errors details](htt
 1. Rebuild the solution.
 1. Fix all compiler warnings and errors.
 1. Run all unit tests, make sure all unit tests completed successfully.
-1. Review all changes, make sure the only code files (.cs) in NumericConversions project have changes. No changes in project files (.csproj) or in NumericConversions.Tests project.
+1. Review all changes, make sure the only code files (.cs) in Arrays project have changes. No changes in project files (.csproj) or in Arrays.Tests project.
 1. Stage your changes, and create a commit.
 1. Push your changes to remote repository.
 
