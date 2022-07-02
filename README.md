@@ -5,9 +5,129 @@ Beginner level task for practicing arrays.
 
 ## Task Description
 
-1. Implement 35 static methods in [CreatingArray.cs](WorkingWithArrays/CreatingArray.cs) file. See the method documentation and TODO comments.
-1. Implement 31 static methods in [UsingIndexerForAccessingArrayElement.cs](WorkingWithArrays/UsingIndexerForAccessingArrayElement.cs) file. See the method documentation and TODO comments.
-1. Implement 10 static methods in [UsingRanges.cs](WorkingWithArrays/UsingRanges.cs) file. See the method documentation and TODO comments.
+### Creating Arrays
+
+In the [CreateEmptyArrayOfIntegers](Arrays/CreatingArray.cs#L8) method return an empty array.
+
+```cs
+public static int[] CreateEmptyArrayOfIntegers()
+{
+    return new int[0];
+}
+```
+
+In the [CreateEmptyArrayOfBooleans](Arrays/CreatingArray.cs#L15) method initialize an array variable with empty initialization list and return an empty array.
+
+```cs
+public static bool[] CreateEmptyArrayOfBooleans()
+{
+    bool[] array = { };
+    return array;
+}
+```
+
+In the [CreateEmptyArrayOfStrings](Arrays/CreatingArray.cs#L23) method return an empty array using the syntax with an empty initialization list.
+
+```cs
+public static string[] CreateEmptyArrayOfStrings()
+{
+    return new string[] { };
+}
+```
+
+Implement the _CreateEmptyArrayOfCharacters_ method in the same way.
+
+In the [CreateEmptyArrayOfDoubles](Arrays/CreatingArray.cs#L38) method return an empty array by calling the [Array.Empty&lt;T&gt;](https://docs.microsoft.com/en-us/dotnet/api/system.array.empty) method.
+
+```cs
+public static double[] CreateEmptyArrayOfDoubles()
+{
+    return Array.Empty<double>();
+}
+```
+
+Using the _Array.Empty&lt;T&gt;_ method to create an empty array is more preferable way, because empty arrays created by the _Array.Empty&lt;T&gt;_ method are cached in a .NET application and reused.
+
+Implement all static methods in [CreatingArray.cs](Arrays/CreatingArray.cs) file. See the method documentation and TODO comments.
+
+
+### Accessing Array Elements
+
+In the [GetFirstArrayElement](Arrays/UsingIndexerForAccessingArrayElement.cs#L5) method return the first array element.
+
+```cs
+public static int GetFirstArrayElement(int[] array)
+{
+    return array[0];
+}
+```
+
+In the [GetLastElement](Arrays/UsingIndexerForAccessingArrayElement.cs#L23) method return the last array element.
+
+```cs
+public static int GetLastElement(int[] array)
+{
+    return array[array.Length - 1];
+}
+```
+
+The [Array.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length) property returns an array length.
+
+In the [GetLastElement](Arrays/UsingIndexerForAccessingArrayElement.cs#L145) method return the last array element using the [index from end operator ^](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/ranges-indexes).
+
+```cs
+public static double GetLastElement(double[] array)
+{
+    return array[^1];
+}
+```
+
+Implement all static methods in [UsingIndexerForAccessingArrayElement.cs](Arrays/UsingIndexerForAccessingArrayElement.cs) file. See the method documentation and TODO comments.
+
+
+### Ranges
+
+[Ranges](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges) is C# 8 feature that allows to get a subrange of an array.
+
+In the [GetArrayWithAllElements](Arrays/UsingRanges.cs#L7) method return the subrange with all array elements using [range operator ..](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges#systemrange).
+
+```cs
+public static int[] GetArrayWithAllElements(int[] array)
+{
+    return array[0..^0];
+}
+```
+
+The range operator has two operands. Either operand can be omitted:
+
+```cs
+public static int[] GetArrayWithAllElements(int[] array)
+{
+    return array[..];
+}
+```
+
+The both methods above are equivalent.
+
+In the [GetArrayWithoutFirstElement](Arrays/UsingRanges.cs#L14) method return an array subrange without the first element.
+
+```cs
+public static int[] GetArrayWithoutFirstElement(int[] array)
+{
+    return array[1..];
+}
+```
+
+In the [GetArrayWithoutLastElement](Arrays/UsingRanges.cs#L32) method return an array subrange without the last element.
+
+```cs
+public static int[] GetArrayWithoutLastElement(int[] array)
+{
+    return array[..^1];
+}
+```
+
+Implement all static methods in [UsingRanges.cs](Arrays/UsingRanges.cs) file. See the method documentation and TODO comments.
 
 
 ## Fix Compiler Issues

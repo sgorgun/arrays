@@ -4,31 +4,34 @@ namespace WorkingWithArrays
 {
     public static class CreatingArray
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static int[] CreateEmptyArrayOfIntegers()
         {
             // TODO #1-1. Add the method implementation. The method should return an empty array.
-            // See Array.Empty<T> method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.array.empty
             throw new NotImplementedException();
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static bool[] CreateEmptyArrayOfBooleans()
         {
             // TODO #1-2. Add the method implementation. The method should return an empty array.
-            // See Array.Empty<T> method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.array.empty
+            // Initialize an array variable with empty initialization list and return an empty array.
             throw new NotImplementedException();
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static string[] CreateEmptyArrayOfStrings()
         {
             // TODO #1-3. Add the method implementation. The method should return an empty array.
-            // See Array.Empty<T> method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.array.empty
+            // Return an empty array using the syntax with an empty initialization list.
             throw new NotImplementedException();
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static char[] CreateEmptyArrayOfCharacters()
         {
             // TODO #1-4. Add the method implementation. The method should return an empty array.
-            // See Array.Empty<T> method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.array.empty
+            // Return an empty array using the syntax with an empty initialization list.
             throw new NotImplementedException();
         }
 
