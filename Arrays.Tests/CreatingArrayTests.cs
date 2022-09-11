@@ -108,7 +108,7 @@ namespace WorkingWithArrays.Tests
             // Assert
             Assert.NotNull(result);
             Assert.AreEqual(5, result.Length);
-            Assert.That(result, Is.EquivalentTo(new string[5]));
+            Assert.That(result, Is.EquivalentTo(new string[5] { string.Empty, string.Empty, string.Empty, string.Empty, string.Empty }));
         }
 
         [Test]
