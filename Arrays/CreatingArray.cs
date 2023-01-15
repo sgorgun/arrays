@@ -11,7 +11,6 @@ namespace WorkingWithArrays
             return new int[0];
         }
 
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static bool[] CreateEmptyArrayOfBooleans()
         {
@@ -19,13 +18,11 @@ namespace WorkingWithArrays
             return array;
         }
 
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static string[] CreateEmptyArrayOfStrings()
         {
             return new string[] { };
         }
-
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "CA1825:Avoid zero-length array allocations", Justification = "Education purposes")]
         public static char[] CreateEmptyArrayOfCharacters()
@@ -37,7 +34,6 @@ namespace WorkingWithArrays
         {
             return Array.Empty<double>();
         }
-
 
         public static float[] CreateEmptyArrayOfFloats()
         {
